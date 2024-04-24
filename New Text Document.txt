@@ -1,0 +1,21 @@
+experiment 1 data pre processing
+
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+import numpy as np
+import pandas as pd
+
+data = pd.read_csv(r"C:\Users\Online\Desktop\New folder (2)\diabetes.csv")
+
+mean_removed_data = data - np.mean(data, axis=0)
+
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(data)
+
+normalizer = MinMaxScaler()
+normalized_data = normalizer.fit_transform(data)
+
+print("Mean removed data:\n", mean_removed_data)
+print("Scaled data:\n", scaled_data)
+print("Normalized data:\n", normalized_data)
+
+

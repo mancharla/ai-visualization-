@@ -1,0 +1,14 @@
+scikit-learn
+pandas
+numpy
+pyforest
+matplotlib
+nltk
+tensorflow
+keras
+spacy
+transformers
+torch
+gensim
+en_core_web_sm
+
